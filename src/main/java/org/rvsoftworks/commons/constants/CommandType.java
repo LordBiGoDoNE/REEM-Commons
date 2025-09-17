@@ -5,7 +5,7 @@ public enum CommandType {
     FILE_UPDATE("Baixar/Modificar"),
     READ_UPDATE("Ler/Editar");
 
-    private String description;
+    private final String description;
 
     CommandType(String description) {
         this.description = description;
@@ -13,5 +13,9 @@ public enum CommandType {
 
     public String getDescription() {
         return description;
+    }
+
+    public static CommandType getByName(String pName){
+        return CommandType.valueOf(pName.toUpperCase().replace('_', ' '));
     }
 }

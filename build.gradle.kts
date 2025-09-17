@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "org.rvsoftworks"
-version = "1.0.0"
+version = "1.0.4"
 description = "Commons for REEM platform"
 
 publishing {
@@ -41,4 +41,5 @@ java {
 
 dependencies {
     implementation("com.fasterxml.jackson.core:jackson-annotations:2.15.2")
+    implementation("com.github.f4b6a3:uuid-creator:6.1.0")
 }
